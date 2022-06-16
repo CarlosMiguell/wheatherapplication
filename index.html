@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\css\style.css">
+    <link rel="stylesheet" href="\css\colors.css">
+
+    <title> Clima Tempo </title>
+    
+</head>
+
+<body>
+
+    <span class="toggle"></span>
+    <span class="wave"></span>
+
+    <div class="after-header">
+        <div class="ticker-container">
+        <div class="ticker-carroussel">
+            <div id="ticker-content">
+            <a href="https://www.infomoney.com.br/ibovespa" class="negativo"><div class="title">Ibovespa</div><div class="points"><div class="value">111.161 pts</div><div class="spread">-1,10%</div></div></a><a href="https://www.infomoney.com.br/dolar" class="negativo"><div class="title">DÓLAR</div><div class="points"><div class="value">R$ 4,78</div><div class="spread">-0,46%</div></div></a><a href="https://www.infomoney.com.br/bitcoin" class="negativo"><div class="title">BITCOIN</div><div class="points"><div class="value">R$ 141.443</div><div class="spread">-2,60%</div></div></a><a href="https://www.infomoney.com.br/ifix" class="positivo"><div class="title">IFIX</div><div class="points"><div class="value">2.830 pts</div><div class="spread">+0,13%</div></div></a><a href="https://www.infomoney.com.br/mglu3" class="negativo"><div class="title">MGLU3</div><div class="points"><div class="value">R$ 3,58</div><div class="spread">-5,79%</div></div></a><a href="https://www.infomoney.com.br/petr4" class="positivo"><div class="title">PETR4</div><div class="points"><div class="value">R$ 30,37</div><div class="spread">+2,05%</div></div></a><a href="https://www.infomoney.com.br/vale3" class="negativo"><div class="title">VALE3</div><div class="points"><div class="value">R$ 88,67</div><div class="spread">-1,37%</div></div></a><a href="https://www.infomoney.com.br/itub4" class="negativo"><div class="title">ITUB4</div><div class="points"><div class="value">R$ 25,60</div><div class="spread">-1,12%</div></div></a><a href="https://www.infomoney.com.br/abev3" class="negativo"><div class="title">ABEV3</div><div class="points"><div class="value">R$ 14,06</div><div class="spread">-0,42%</div></div></a><a href="https://www.infomoney.com.br/ggbr4" class="negativo"><div class="title">GGBR4</div><div class="points"><div class="value">R$ 30,08</div><div class="spread">-0,63%</div></div></a><div class="aditional">
+            <a href="https://www.infomoney.com.br/ibovespa" class="negativo"><div class="title">Ibovespa</div><div class="points"><div class="value">111.161 pts</div><div class="spread">-1,10%</div></div></a><a href="https://www.infomoney.com.br/dolar" class="negativo"><div class="title">DÓLAR</div><div class="points"><div class="value">R$ 4,78</div><div class="spread">-0,46%</div></div></a><a href="https://www.infomoney.com.br/bitcoin" class="negativo"><div class="title">BITCOIN</div><div class="points"><div class="value">R$ 141.443</div><div class="spread">-2,60%</div></div></a><a href="https://www.infomoney.com.br/ifix" class="positivo"><div class="title">IFIX</div><div class="points"><div class="value">2.830 pts</div><div class="spread">+0,13%</div></div></a><a href="https://www.infomoney.com.br/mglu3" class="negativo"><div class="title">MGLU3</div><div class="points"><div class="value">R$ 3,58</div><div class="spread">-5,79%</div></div></a><a href="https://www.infomoney.com.br/petr4" class="positivo"><div class="title">PETR4</div><div class="points"><div class="value">R$ 30,37</div><div class="spread">+2,05%</div></div></a><a href="https://www.infomoney.com.br/vale3" class="negativo"><div class="title">VALE3</div><div class="points"><div class="value">R$ 88,67</div><div class="spread">-1,37%</div></div></a><a href="https://www.infomoney.com.br/itub4" class="negativo"><div class="title">ITUB4</div><div class="points"><div class="value">R$ 25,60</div><div class="spread">-1,12%</div></div></a><a href="https://www.infomoney.com.br/abev3" class="negativo"><div class="title">ABEV3</div><div class="points"><div class="value">R$ 14,06</div><div class="spread">-0,42%</div></div></a><a href="https://www.infomoney.com.br/ggbr4" class="negativo"><div class="title">GGBR4</div><div class="points"><div class="value">R$ 30,08</div><div class="spread">-0,63%</div></div></a></div></div>
+        </div>
+        <div class="ticker-open-account">
+            <a class="typography__body--5 typography--wbold" href="https://www.xpi.com.br/simulador-de-investimento/?utm_source=infomoney&amp;utm_medium=carrossel&amp;utm_campaign=simulador" target="_blank">Simule Agora</a>
+        </div>
+    </div>
+        </div>
+
+<header>
+    <div class="container">
+        <h1>Lembrar-me</h1>
+        <form action="">
+            <input type="text" id="note-title" placeholder="Note title">
+            <textarea id="note-text" placeholder="Note Details"></textarea>
+        
+            <button id="add-btn">Nova anotação</button>
+        </form>
+
+        <h2>Suas Anotações</h2>
+        <hr>
+        <div id="notes">
+    
+                <div class="note">
+                    <p class="note-counter">Anotação${index + 1}</p>
+                    <h3 class="note-title"> $element.title </h3>
+                    <p class="note-text"> $element.text</p>
+                    <button class="note-btn">Deletar anotação</button>
+                    <button class="notr-btn edit-btn">Deletar anotação</button>
+                </div>
+            
+        </div>
+
+    </div>
+</header>
+
+
+
+
+    <section class="clima">
+    
+    <h1>ClimaTempo WebApp</h1>
+
+    <form id="form">
+        <input 
+            type="text"
+            id="search"
+            placeholder="Digite sua cidade"
+            autocomplete="off"
+        />
+    </form>
+
+    <main id="main"></main>
+    
+    </section>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/toggle.js"></script>
+
+
+</body>
+</html>
